@@ -670,8 +670,8 @@ sample_178d	"ÀÔ·Â" ¸í·É¿¡¼­ Å°º¸µå ÀÔ·Â ¹æ½ÄÀ» ¼±ÅÃÇÕ´Ï´Ù. UNICODE, ANSI·Î ÁöÁ¤Ç
 
 
 sample_179c	$GUITAR_RecentResult
-sample_179s	^target:SUB-SCRIPT.TXT^ ^command:½ÇÇà^ÇÑ´Ù. ^target:$GUITAR_RecentResult=False^ °°À¸¸é ^command:½ÇÆĞ^ÇÑ´Ù. 
-sample_179d	ÃÖ±Ù ½ÇÇàÇÑ "½ÇÇà" ¸í·É¿¡¼­ ¿À·ù°¡ ¹ß»ıµÇ¾ú´ÂÁö ¿©ºÎ¸¦ Àü´ŞÇÕ´Ï´Ù. ÁÖ¿ä ½ºÅ©¸³Æ®¿¡¼­ ¿À·ù°¡ ¹ß»ıµÈ °æ¿ì È®ÀÎÇÏ°í Áï°¢ÀûÀÎ Á¶Ä¡°¡ ÇÊ¿äÇÒ¶§ »ç¿ëÇÕ´Ï´Ù. (ºÒÇÊ¿äÇÏ°Ô ÀÌÈÄ ½ºÅ©¸³Æ®°¡ ½ÇÇàµÇ´Â°ÍÀ» ¹æÁö)
+sample_179s	^target:$GUITAR_RecentResult=True^ ^command:¼³Á¤^ @crlf^target:SUB-SCRIPT.TXT^ ^command:½ÇÇà^ÇÑ´Ù.@crlf^target:$GUITAR_RecentResult=False^ ^command:°°À¸¸é^ ^command:½ÇÆĞ^ÇÑ´Ù. 
+sample_179d	ÃÖ±Ù ½ÇÇàÇÑ "½ÇÇà" ¸í·ÉÁß¿¡ ÀÏºÎ¿À·ù°¡ ¹ß»ıµÇ¾úÀ» °æ¿ì False·Î °ªÀÌ º¯°æµË´Ï´Ù. ½ºÅ©¸³Æ®³»ºÎ¿¡¼­ ¿À·ù ¹ß»ıÀ» È®ÀÎÇÏ°í ÀÌÈÄ Ã³¸®¸¦ ÁøÇàÇÏ´Âµ¥ »ç¿ëÇÕ´Ï´Ù. (ºÒÇÊ¿äÇÏ°Ô ÀÌÈÄ ½ºÅ©¸³Æ®°¡ ½ÇÇàµÇ´Â°ÍÀ» ¹æÁö)
 
 
 sample_190c	$GUITAR_Webdriver
