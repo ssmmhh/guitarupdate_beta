@@ -255,7 +255,7 @@ common_information	정보
 common_confirm	확인
 common_timehour	시간
 common_timeminute	분
-common_adminerror	프로그램의 정상적인 자동을 위해서 ""관리자 권한""으로 실행되어야 합니다.
+common_adminerror	프로그램의 정상적인 작동을 위해서 ""관리자 권한""으로 실행되어야 합니다.
 
 main_looptest	반복 실행
 main_looptesting	반복 테스트 수행중
@@ -539,20 +539,20 @@ sample_056s	"^target:전화기아이콘^"을 ^command:롱탭^ 한다.
 sample_056d	지정된 이미지를 찾아 오래동안(2초) 누릅니다.
 
 sample_057c	위치탭
-sample_057s	"^target:20%,80%^" ^command:위치탭^ 한다.
-sample_057d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 탭한다.
+sample_057s	"^target:20%,80%^" ^command:위치탭^ 한다. "^target:50,20^" ^command:위치탭^ 한다.
+sample_057d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 탭한다. 좌표값이 %가 없이 지정될 경우 픽셀기준으로 절대위치를 의미함
 
 sample_058c	위치롱탭
-sample_058s	"^target:20%,80%^" ^command:위치롱탭^ 한다.
-sample_058d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 롱탭한다.
+sample_058s	"^target:20%,80%^" ^command:위치롱탭^ 한다. "^target:50,20^" ^command:위치롱탭^ 한다.
+sample_058d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 롱탭한다. 좌표값이 %가 없이 지정될 경우 픽셀기준으로 절대위치를 의미함
 
 sample_059c	위치더블탭
-sample_059s	"^target:20%,80%^" ^command:위치더블탭^ 한다.
-sample_059d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 더블탭한다.
+sample_059s	"^target:20%,80%^" ^command:위치더블탭^ 한다. "^target:50,20^" ^command:위치더블탭^ 한다.
+sample_059d	전체 화면크기의 100%로 보았을때 X%, Y% 위치를 더블탭한다.좌표값이 %가 없이 지정될 경우 픽셀기준으로 절대위치를 의미함
 
 sample_060c	플리킹
-sample_060s	"^target:90%,50%,10%,50%^" ^command:플리킹^ 한다.
-sample_060d	화면을 쓸어넘기기 합니다. 각 좌표값은 0~100 까지를 입력할 수 있습니다. & @crlf  X1, Y1 좌표로 부터 X2,Y2 좌표로 쓸어 넘기는 작동을 수행합니다. (0,0=왼쪽위, 100,100 오른쪽 아래)
+sample_060s	"^target:90%,50%,10%,50%^" ^command:플리킹^ 한다. "^target:90,50,10,50^" ^command:플리킹^ 한다. 
+sample_060d	화면을 쓸어넘기기 합니다. 각 좌표값은 0~100 까지를 입력할 수 있습니다. & @crlf  X1, Y1 좌표로 부터 X2,Y2 좌표로 쓸어 넘기는 작동을 수행합니다. (0,0=왼쪽위, 100,100 오른쪽 아래) 좌표값이 %가 없이 지정될 경우 픽셀기준으로 절대위치를 의미함
 
 sample_061c	홈이동
 sample_061s	^command:홈이동^ 한다.
@@ -678,3 +678,7 @@ sample_190c	$GUITAR_Webdriver
 sample_190s	"^target:$GUITAR_Webdriver^" ^command:로그쓰기^한다.
 sample_190d	WebDriver 모드 여부를 확인하거나, 지정합니다.  (True, False)
 
+
+sample_191c	$GUITAR_WebdriverAlerttext
+sample_191s	"^target:$GUITAR_WebdriverAlerttext^" ^command:로그쓰기^한다.
+sample_191d	WebDriver 모드에서 경고창이 나타난 경우 해당 TEXT 값이 저장됩니다.
