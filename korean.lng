@@ -624,15 +624,19 @@ sample_167s	^target:네이버로고^를 ^command:확인^한다. "^target:$GUITAR_RecentXYP
 sample_167d	최근에 사용된 이미지의 X1,Y1,X2,Y2형태로 리턴합니다. 부분캡쳐시 상대좌표로 활용 할 수 있습니다. ($GUITAR_최근전체좌표)
 
 sample_168c	$GUITAR_ReportPath
-sample_168s	"^target:$r=FileWriteLine(''|$GUITAR_ReportPath|\|$GUITAR_CurrentDateTime|.log'', ''a'')^" ^command:계산^ 
-sample_168d	작업중인 리포트 경로를 리턴합니다. 경로를 참조하여 추가적인 파일관련 작업을 수행 할 수 있습니다. ($GUITAR_리포트경로)
+sample_168s	"^target:$r=FileWriteLine('|$GUITAR_ReportPath|\|$GUITAR_CurrentDateTime|.log', 'a')"^" ^command:계산^ 
+sample_168d	테스트결과 리포트 경로를 리턴합니다. 경로를 참조하여 추가적인 파일관련 작업을 수행 할 수 있습니다. ($GUITAR_리포트경로)
+
+sample_1681c	$GUITAR_ReportURL
+sample_1681s	"^target:$GUITAR_ReportURL^" ^command:로그쓰기^ 한다
+sample_1681d	테스트결과 대시보드 URL을 리턴합니다. 값을 참고하여 리포트폴더 내부에 저장된 파일들을 링크걸수 있습니다. 
 
 sample_169c	$GUITAR_ScriptPath
-sample_169s	"^target:$r=FileWriteLine(''|$GUITAR_ScriptPath|\|$GUITAR_CurrentDateTime|.log'', ''a'')^" ^command:계산^ 
+sample_169s	"^target:$r=FileWriteLine('|$GUITAR_ScriptPath|\|$GUITAR_CurrentDateTime|.log', 'a')^" ^command:계산^ 
 sample_169d	실행중인 스크립트 경로를 리턴합니다. 경로값을 사용하여 파일저장등의 작업을 수행 할 수 있습니다. (누적로그 기록등...) ($GUITAR_스크립트경로)
 
 sample_170c	$GUITAR_WorkPath
-sample_170s	^target:"$GUITAR_WorkPath"^ ^command:로그쓰기^ 한다
+sample_170s	"^target:$GUITAR_WorkPath^" ^command:로그쓰기^ 한다
 sample_170d	현재 사용중인 작업경로 (스크립트 최상위 폴더)를 리턴합니다. ($GUITAR_작업경로)
 
 sample_171c	$GUITAR_XMLPath
